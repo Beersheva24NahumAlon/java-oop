@@ -8,7 +8,7 @@ import telran.shapes.Square;
 
 public class ShapesTest {
     @Test
-    void ShapeTest() {
+    void canvasTest() {
         Canvas canvas = new Canvas();
         Rectangle rectangle = new Rectangle(10, 20);
         Square square = new Square(10);
@@ -22,4 +22,3 @@ public class ShapesTest {
         assertEquals(600, canvas.square());
     }
 }
-
