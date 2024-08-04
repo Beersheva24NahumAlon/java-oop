@@ -14,10 +14,10 @@ public class Canvas implements Shape {
     }
 
     @Override
-    public int perimiter() {
+    public int perimeter() {
         int res = 0;
         for (Shape shape : shapes) {
-            res += shape.perimiter();
+            res += shape.perimeter();
         }
         return res;
     }

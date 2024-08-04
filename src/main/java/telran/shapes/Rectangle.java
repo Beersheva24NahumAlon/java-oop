@@ -10,7 +10,7 @@ public class Rectangle implements Shape {
     }
 
     @Override
-    public int perimiter() {
+    public int perimeter() {
         return (width + height) * 2;
     }
 

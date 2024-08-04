@@ -18,7 +18,7 @@ public class ShapesTest {
         canvas.addShape(subCanvas);
         canvas.addShape(rectangle);
         canvas.addShape(square);
-        assertEquals(200, canvas.perimiter());
+        assertEquals(200, canvas.perimeter());
         assertEquals(600, canvas.square());
     }
 }
