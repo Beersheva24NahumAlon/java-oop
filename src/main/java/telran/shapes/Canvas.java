@@ -13,6 +13,17 @@ public class Canvas implements Shape {
         shapes = Arrays.insert(shapes, shapes.length, shape);
     }
 
+    public int count() {
+        int res = 0;
+        for (Shape shape : shapes) {
+            res++;
+            if (shape instanceof Canvas) {
+                res += ((Canvas) shape).count();
+            }
+        }
+        return res;
+    }
+
     @Override
     public int perimeter() {
         int res = 0;
